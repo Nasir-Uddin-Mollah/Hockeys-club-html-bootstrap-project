@@ -1,0 +1,220 @@
+.navbar {
+    .navbar-brand {
+        font-size: 36px;
+
+        span {
+            color: red;
+        }
+    }
+
+    .navbar-nav {
+        .nav-item {
+            padding-right: 30px;
+        }
+    }
+}
+
+.hero-section {
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.hero-section img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #131318;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.nav-icons {
+
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.nav-icons i {
+    font-size: 24px;
+    color: black;
+    margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+    .hero-text {
+        position: static;
+        margin-top: 10px;
+    }
+
+    .navbar-brand {
+        margin-left: -90px;
+    }
+
+    .nav-icons {
+        bottom: 10px;
+        position: static;
+
+        i {
+            margin: 0 5px;
+        }
+    }
+
+}
+
+.club {
+    border-top: 2px dashed rgba(0, 0, 0, 0.1);
+    border-bottom: 2px dashed rgba(0, 0, 0, 0.1);
+    padding: 32px;
+    width: 100%;
+
+    .club-des {
+        font-size: 16px;
+    }
+}
+
+.progress-circle {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+
+    svg {
+        transform: rotate(-90deg);
+
+        .circle-bg {
+            fill: none;
+            stroke: #eee;
+            stroke-width: 10;
+        }
+
+        .circle {
+            fill: none;
+            stroke-width: 10;
+            stroke-linecap: round;
+        }
+    }
+
+    .percentage {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+    }
+}
+
+
+.program-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    color: white;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(19, 19, 24, 0.5);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+
+        .btn-custom {
+            color: white;
+            width: 180px;
+            font-weight: bold;
+            border: none;
+        }
+    }
+}
+
+.card {
+    .product-img {
+        padding-top: 15px;
+        padding-left: 15px;
+    }
+
+    .card-body {
+        .icons {
+            .star-icon {
+                color: #F99808;
+            }
+        }
+    }
+}
+
+.client-question {
+    height: auto;
+    border: 1px solid rgba(19, 19, 24, 0.1);
+
+    .accordion-button::after {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
+        transition: all 0.5s;
+    }
+
+    .accordion-button:not(.collapsed)::after {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
+    }
+}
+
+.contact {
+    .contact-info {
+        border: 1px solid rgba(19, 19, 24, 0.1);
+
+        .phone {
+            background-color: rgba(188, 237, 109, 0.1);
+        }
+
+        .email {
+            background-color: rgba(253, 221, 95, 0.1);
+        }
+
+        .location {
+            background-color: rgba(98, 156, 243, 0.1);
+        }
+    }
+}
+
+.social-media-links {
+    background-color: rgba(19, 19, 24, 0.03);
+}
+
+footer {
+    ul {
+        a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        a:hover {
+            color: white;
+        }
+    }
+
+    background-color: rgba(19, 19, 24, 1);
+
+    .get-in-touch {
+        .foot-des {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .mail-phone {
+            color: rgba(255, 255, 255, 0.8);
+        }
+    }
+}
